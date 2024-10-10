@@ -143,7 +143,7 @@ Group:          Applications/Databases
 Version:        %{mysql_version}
 Release:        %{release}
 License:        Copyright (c) 2000, %{build_timestamp}, %{mysql_vendor}. All rights reserved. Under %{?license_type} license as shown in the Description field..
-Source0:        http://www.percona.com/downloads/Percona-Server-8.0/Percona-Server-%{mysql_version}-%{percona_server_version}/source/%{src_dir}.tar.gz
+Source0:        http://www.percona.com/downloads/Percona-Server-9.0/Percona-Server-%{mysql_version}-%{percona_server_version}/source/%{src_dir}.tar.gz
 URL:            http://www.percona.com/
 Packager:       Percona MySQL Development Team <mysqldev@percona.com>
 Vendor:         %{percona_server_vendor}
@@ -795,7 +795,7 @@ rm -f /tmp/call-home.sh
 echo "Percona Server is distributed with several useful UDF (User Defined Function) from Percona Toolkit."
 echo "Run the following command to install these functions (fnv_64, fnv1a_64, murmur_hash):"
 echo "mysql -e \"INSTALL COMPONENT 'file://component_percona_udf'\""
-echo "See http://www.percona.com/doc/percona-server/8.0/management/udf_percona_toolkit.html for more details"
+echo "See http://www.percona.com/doc/percona-server/9.0/management/udf_percona_toolkit.html for more details"
 
 %preun -n percona-server-server
 %if 0%{?systemd}
