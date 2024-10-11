@@ -1588,7 +1588,7 @@ fi
 %{_libdir}/mysqlrouter/private/libmysqlrouter_http.so.*
 %{_libdir}/mysqlrouter/private/libmysqlrouter_http_auth_backend.so.*
 %{_libdir}/mysqlrouter/private/libmysqlrouter_http_auth_realm.so.*
-%{_libdir}/mysqlrouter/private/libprotobuf-lite.so.*
+#%{_libdir}/mysqlrouter/private/libprotobuf-lite.so.*
 %{_libdir}/mysqlrouter/private/libabsl_*.so
 %{_libdir}/mysqlrouter/private/libmysqlrouter_io_component.so.*
 %{_libdir}/mysqlrouter/private/libmysqlrouter_metadata_cache.so.*
@@ -1600,6 +1600,7 @@ fi
 %{_libdir}/mysqlrouter/private/libmysqlrouter_mysqlxclient.so.*
 %{_libdir}/mysqlrouter/private/libmysqlrouter_utils.so.*
 %{_libdir}/mysqlrouter/private/libmysqlrouter_http_server.so.*
+%{_libdir}/mysqlrouter/private/libmysqlrouter_mysql.so.*
 %dir %{_libdir}/mysqlrouter
 %dir %{_libdir}/mysqlrouter/private
 %{_libdir}/mysqlrouter/*.so
