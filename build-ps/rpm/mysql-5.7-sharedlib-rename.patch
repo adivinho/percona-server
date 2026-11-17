@@ -331,6 +331,17 @@
 
  DISABLE_MISSING_PROFILE_WARNING()
 
+--- libmysql/authentication_webauthn/CMakeLists.txt
++++ libmysql/authentication_webauthn/CMakeLists.txt
+@@ -55,7 +55,7 @@
+   common.cc
+   registration.cc
+   LINK_LIBRARIES
+-  perconaserverclient
++  mysqlclient
+   ext::fido
+   OpenSSL::SSL  # Needs RAND_bytes from libcrypto.
+   OpenSSL::Crypto
 --- unittest/gunit/changestreams/CMakeLists.txt         2022-03-31 15:09:27.559009464 +0000
 +++ unittest/gunit/changestreams/CMakeLists.txt         2022-03-31 15:10:26.404854666 +0000
 @@ -36,7 +36,7 @@
