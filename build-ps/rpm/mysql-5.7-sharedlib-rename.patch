@@ -353,13 +353,13 @@
    ${GTEST_LIBRARIES})
 
  # If we are using the protobuf extensions
---- libmysql/fido_client/common/CMakeLists.txt	2024-01-06 19:59:00.366685501 +0000
-+++ libmysql/fido_client/common/CMakeLists.txt	2024-01-06 19:59:05.366685501 +0000
-@@ -45,6 +45,6 @@
-   fido_client_common
-   ${FIDO_COMMON_SOURCES}
-   LINK_LIBRARIES
--  perconaserverclient
-+  mysqlclient
-   ext::fido
- )
+#--- libmysql/fido_client/common/CMakeLists.txt	2024-01-06 19:59:00.366685501 +0000
+#+++ libmysql/fido_client/common/CMakeLists.txt	2024-01-06 19:59:05.366685501 +0000
+#@@ -45,6 +45,6 @@
+#   fido_client_common
+#   ${FIDO_COMMON_SOURCES}
+#   LINK_LIBRARIES
+#-  perconaserverclient
+#+  mysqlclient
+#   ext::fido
+# )
