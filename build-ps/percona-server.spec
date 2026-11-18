@@ -1333,6 +1333,10 @@ fi
 %attr(755, root, root) %{_libdir}/mysql/plugin/debug/procfs.so
 %attr(755, root, root) %{_libdir}/mysql/plugin/authentication_ldap_sasl.so
 %attr(755, root, root) %{_libdir}/mysql/plugin/debug/authentication_ldap_sasl.so
+%if 0%{?rhel} >= 8 || 0%{?amzn} >= 2023
+%attr(755, root, root) %{_libdir}/mysql/plugin/authentication_webauthn.so
+%attr(755, root, root) %{_libdir}/mysql/plugin/debug/authentication_webauthn.so
+%endif
 
 %if 0%{?rhel} > 6 || 0%{?amzn} >= 2023
 %attr(755, root, root) %{_libdir}/mysql/plugin/component_encryption_udf.so
